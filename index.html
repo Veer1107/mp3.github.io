@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"  />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadSong('littlefreak')">
+    <h1>Yo ! Cypressian</h1>
+    <div class="twoboxes">
+        <div class="contents">
+            <div class="title-box">
+                <h4>Index</h4>
+                <h4>Title</h4>
+                <h4>Duration</h4>
+            </div>
+           
+            <div class="one" id="wolves" onclick="loadSong('littlefreak')">
+                <span>1</span>
+                <div class="box">
+                    <img src="images/littlefreak.jpg" alt="" id="image">
+                    <h4 id="titleincontent">Little Freak</h4>
+                   
+                </div>
+                <div class="duration">
+                    <span>3.22</span>
+                </div>
+            </div>
+            <div class="one" id="itaintme" onclick="loadSong('youth')">
+                <span>2</span>
+                <div class="box">
+                    <img src="images/youth.jpg" alt="" id="image">
+                    <h4 id="titleincontent">Youth</h4>
+                   
+                </div>
+                <div class="duration">
+                    <span>3.18</span>
+                </div>
+            </div>
+            <div class="one" id="fireflies" onclick="loadSong('daylight')">
+                <span>3</span>
+                <div class="box">
+                    <img src="images/daylight.jpg" alt="" id="image">
+                    <h4 id="titleincontent">Daylight</h4>
+                   
+                </div>
+                <div class="duration">
+                    <span>244</span>
+                </div>
+            </div>
+            <div class="one" id="paris" onclick="loadSong('forever')">
+                <span>4</span>
+                <div class="box">
+                    <img src="images/forever.jpg" alt="" id="image">
+                    <h4 id="titleincontent">Forever</h4>
+                   
+                </div>
+                <div class="duration">
+                    <span>3.41</span>
+                </div>
+            </div>
+            <div class="one" id="superhero" onclick="loadSong('superhero')">
+                <span>5</span>
+                <div class="box">
+                    <img src="images/superhero.jpg" alt="" id="image">
+                    <h4 id="titleincontent">SuperHero</h4>
+                   
+                </div>
+                <div class="duration">
+                    <span>3.26</span>
+                </div>
+            </div>
+            <div class="one" id="superhero" onclick="loadSong('tobeginagain')">
+                <span>5</span>
+                <div class="box">
+                    <img src="images/tobeginagain.jpg" alt="" id="image">
+                    <h4 id="titleincontent">To Begin again</h4>
+                   
+                </div>
+                <div class="duration">
+                    <span>3.31</span>
+                </div>
+            </div>
+            <div class="one" id="superhero" onclick="loadSong('chinatown')">
+                <span>5</span>
+                <div class="box">
+                    <img src="images/chinatown.jpg" alt="" id="image">
+                    <h4 id="titleincontent">Chinatown</h4>
+                   
+                </div>
+                <div class="duration">
+                    <span>4.07</span>
+                </div>
+            </div>
+            <div class="one" id="superhero" onclick="loadSong('goyourownway')">
+                <span>5</span>
+                <div class="box">
+                    <img src="images//goyourownway.jpg" alt="" id="image">
+                    <h4 id="titleincontent">Go Your Own Way</h4>
+                   
+                </div>
+                <div class="duration">
+                    <span>3.44</span>
+                </div>
+            </div>
+            
+            
+           
+          
+    </div>
+   
+
+
+   
+    
+</div>
+<div class="music-container ">
+    <div class="music-info">
+        <h4 id="title">One Thing</h4>
+        <div class="progress-container">
+            <div class="progress"></div>
+        </div>
+    </div>
+
+    <audio src="/music/littlefreak.mp3" id="audio"></audio>
+    <div class="img-container">
+        <img src="/images/littlefreak.jpg" alt="" id="cover">
+    </div>
+    <div class="navigation">
+        <button id="prev" class="action-btn">
+            <i class="fas fa-backward"></i>
+        </button>
+        <button id="play" class="action-btn action-btn-big">
+            <i class="fas fa-play"></i>
+        </button>
+        <button id="next" class="action-btn ">
+            <i class="fas fa-forward"></i>
+        </button>
+    </div>
+   
+</div>
+<script src="script.js"></script>
+</body>
+</html>
